@@ -8422,16 +8422,18 @@ template {
   font-family: "AskanBlack";
   src: url(/assets/font/AskanBlack.otf) format("opentype");
 }
-header {
-  background-image: url("../../images/photos/image-header.jpg");
-  background-color: #cccccc;
-  max-width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  body, html {
+    width: 100%;
+  }
+  header {
+    max-width: 1440px;
+    background-image: url("../../images/photos/image-header.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .nav-logo {
     position: relative;
     left: 15px;
@@ -8452,18 +8454,19 @@ header {
     align-content: center;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  body, html {
+    width: 100%;
+  }
   header {
+    padding: 1rem;
+    width: 200%;
     background-image: url("../../images/photos/image-header.jpg");
-    background-color: #cccccc;
-    min-width: 375px;
-    min-height: 538px;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
   .nav-logo {
-    position: relative;
     left: 15px;
     top: 15px;
     font-family: "FilsonProBlack";
@@ -8573,5 +8576,45 @@ header {
   .nav-menu.active {
     top: 0;
     right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .img_egg {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+  .desc_section_1 {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .egg {
+    box-sizing: content-box;
+    width: 375px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .section_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container_section_1 {
+    padding: 2rem;
+    margin: 1em;
+    text-align: center;
+  }
+  h3 {
+    font-family: "AskanBold";
+    font-size: 24px;
+  }
+  .desc_section_1 {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 0%;
   }
 }/*# sourceMappingURL=style.css.map */
