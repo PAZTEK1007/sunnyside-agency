@@ -1,2 +1,73 @@
-h1{
+header{
+    background-image: url("../../images/photos/image-header.jpg");
+    background-color: #cccccc;
+    max-width: 100% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+@media (min-width:768px) {
+
+    .nav-logo {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        color: white;
+        font-family: 'FilsonProBlack';
+        text-decoration: none;
+    }
+    
+    .creative{
+        text-align: center;
+        font-family: 'AskanBlack';
+        font-size: 60px;
+        color: white;
+    }
+    
+    .arrow_white{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media (max-width:768px) {
+    
+    header{
+        background-image: url("../../images/photos/image-header.jpg");
+        background-color: #cccccc;
+        min-width: 375px;
+        min-height: 538px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    .nav-logo {
+        position: relative;
+        left: 15px;
+        top: 15px;
+        font-family: 'FilsonProBlack';
+        color: white;
+        text-decoration: none;
+    }
+    
+    .creative{
+        text-align: center;
+        font-family: 'AskanBlack';
+        font-weight: 700;
+        font-size: 60px;
+        color: white;
+    }
+    
+    .arrow_white{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .img-arrow{
+        width: 30px;
+        top: 294px
+        
+    }
 }
