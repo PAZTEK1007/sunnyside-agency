@@ -1,0 +1,15 @@
+.cherry-section{
+    @include background;
+    background-image: url("../../images/photos/image-graphic-design.jpg");
+
+}
+@media screen and (min-width: 767px){
+    .cherry-section{
+        width: 100%;
+        height: 600px;
+        top: 200px;
+    }
+    .descGraphic{
+       
+    }
+}

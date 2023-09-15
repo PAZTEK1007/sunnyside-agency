@@ -67,8 +67,8 @@
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-    .nav-menu{
-        position:fixed;
+    .nav-menu{  
+        position: fixed;
         right: -100%;
         top: 0;
         flex-direction: column;
@@ -78,7 +78,8 @@
         transition: 0.3s;
         padding: 1rem;
         gap: 30px;
-        
+        .nav-logo{
+        }
     }
     .nav-items{
         margin: 0;
@@ -89,4 +90,5 @@
         right: 0;
 
     }
+  
 }

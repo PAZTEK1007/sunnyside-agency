@@ -1,0 +1,23 @@
+.glasspink{
+    width: 100%;
+}
+
+.desc{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (min-width: 767px) {
+    .glasspink{
+        width: 100%;
+        height: 312px;
+    }
+    .Stand_Out{
+        display: flex;
+        flex-direction: column;
+    }
+    .desc{
+        text-align: center;
+        margin-left: 25px;
+    }
+}
