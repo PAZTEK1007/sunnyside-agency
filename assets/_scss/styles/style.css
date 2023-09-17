@@ -8475,13 +8475,26 @@ html, body {
   background-position: center center;
   background-size: cover;
   background-image: url("../../images/photos/image-graphic-design.jpg");
+  padding-top: 5px;
+}
+
+.titleCherry {
+  position: relative;
+  top: 350px;
+}
+
+.descCherry {
+  position: relative;
+  top: 350px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 16px;
+  padding: 0 1rem 0 1rem;
 }
 
 @media screen and (min-width: 767px) {
   .cherry-section {
     width: 100%;
-    height: 600px;
-    top: 200px;
   }
 }
 .orange-section {
@@ -8491,4 +8504,62 @@ html, body {
   background-position: center center;
   background-size: cover;
   background-image: url("../../images/photos/image-photography.jpg");
+  padding-top: 5px;
+}
+
+.DescPhoto {
+  position: relative;
+  top: 350px;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 16px;
+  padding: 0 1rem 0 1rem;
+}
+
+.titlePhoto {
+  position: relative;
+  top: 350px;
+}
+
+.photoPeople {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.people-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.containerGallery {
+  display: grid;
+  grid-template-columns: minmax(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 0;
+  grid-template-areas: "milk lemon" "ice sugar";
+}
+
+.milk {
+  aspect-ratio: 1/1;
+  width: 100%;
+  grid-area: milk;
+}
+
+.lemon {
+  aspect-ratio: 1/1;
+  width: 100%;
+  grid-area: lemon;
+}
+
+.ice {
+  aspect-ratio: 1/1;
+  width: 100%;
+  grid-area: ice;
+}
+
+.sugar {
+  aspect-ratio: 1/1;
+  width: 100%;
+  grid-area: sugar;
 }/*# sourceMappingURL=style.css.map */

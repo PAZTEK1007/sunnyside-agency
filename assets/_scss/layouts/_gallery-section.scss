@@ -1,0 +1,33 @@
+.containerGallery{
+    display: grid;
+    grid-template-columns: minmax(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 0;
+    grid-template-areas: 
+    "milk lemon"
+    "ice sugar"
+    ;
+
+}
+.milk{
+    aspect-ratio: 1/1;
+    width: 100%;
+    grid-area: milk;
+}
+
+.lemon{
+    aspect-ratio: 1/1;
+    width: 100%;
+    grid-area: lemon;
+
+}
+.ice{
+    aspect-ratio: 1/1;
+    width: 100%;
+    grid-area: ice;
+}
+.sugar{
+    aspect-ratio: 1/1;
+    width: 100%;
+    grid-area: sugar;
+}

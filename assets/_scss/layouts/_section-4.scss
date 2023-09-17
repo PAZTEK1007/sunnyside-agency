@@ -1,5 +1,12 @@
 .orange-section{
     @include background;
     background-image: url("../../images/photos/image-photography.jpg");
-
+    padding-top: 5px;
+}
+.DescPhoto{
+    @include orangecherry;
+}
+.titlePhoto{
+    position: relative;
+    top: 350px;
 }
