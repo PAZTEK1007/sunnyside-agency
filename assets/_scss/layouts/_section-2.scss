@@ -2,11 +2,16 @@
     width: 100%;
 }
 
-.desc{
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+.container_section_2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
+.stand-out-section{
+    padding-bottom: 5rem;
+}
+
 @media screen and (min-width: 767px) {
     .glasspink{
         width: 100%;

@@ -49,6 +49,7 @@
 }
 .nav-logo{
     font-size: 2rem;
+    z-index: 6;
 }
 
 @media (max-width: 768px){
@@ -78,8 +79,6 @@
         transition: 0.3s;
         padding: 1rem;
         gap: 30px;
-        .nav-logo{
-        }
     }
     .nav-items{
         margin: 0;
@@ -90,5 +89,7 @@
         right: 0;
 
     }
-  
+    .nav-logo{
+        position: fixed;
+    }
 }

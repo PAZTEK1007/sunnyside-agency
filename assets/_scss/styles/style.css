@@ -8239,6 +8239,7 @@ readers do not read off random characters that represent icons */
   src: url(/assets/font/AskanBlack.otf) format("opentype");
 }
 .button {
+  text-align: center;
   width: 150px;
   border: none;
   font-family: "AskanBlack";
@@ -8272,6 +8273,9 @@ header {
 }
 
 .creative {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  margin: 0px;
   text-align: center;
   font-family: "AskanBlack";
   font-size: 60px;
@@ -8280,6 +8284,7 @@ header {
 
 .arrow_white {
   display: flex;
+  size-adjust: 50%;
   justify-content: center;
   align-content: center;
 }
@@ -8319,7 +8324,6 @@ header {
   }
 }
 h3 {
-  text-align: center;
   font-family: "AskanBold";
   font-size: 30px;
 }
@@ -8327,6 +8331,20 @@ h3 {
 html, body {
   margin: 0;
   padding: 0;
+}
+
+.title {
+  font-family: "AskanBlack";
+  text-align: center;
+  font-size: 35px;
+}
+
+.desc {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: #808297;
+  font-size: 16px;
 }
 
 .nav-items {
@@ -8379,6 +8397,7 @@ html, body {
 
 .nav-logo {
   font-size: 2rem;
+  z-index: 6;
 }
 
 @media (max-width: 768px) {
@@ -8416,11 +8435,25 @@ html, body {
     top: 0;
     right: 0;
   }
+  .nav-logo {
+    position: fixed;
+  }
 }
 .desc {
   font-size: 20px;
   font-family: Verdana, sans-serif;
   padding: 0rem 2rem 0rem 2rem;
+}
+
+.container_section_1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.transform-section {
+  padding-bottom: 5rem;
 }
 
 @media screen and (min-width: 767px) {
@@ -8448,10 +8481,15 @@ html, body {
   width: 100%;
 }
 
-.desc {
-  text-align: center;
-  justify-content: center;
-  align-content: center;
+.container_section_2 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.stand-out-section {
+  padding-bottom: 5rem;
 }
 
 @media screen and (min-width: 767px) {
@@ -8479,8 +8517,11 @@ html, body {
 }
 
 .titleCherry {
+  text-align: center;
   position: relative;
   top: 350px;
+  font-family: "AskanBlack";
+  color: #24554A;
 }
 
 .descCherry {
@@ -8490,6 +8531,7 @@ html, body {
   font-family: Verdana;
   font-size: 16px;
   padding: 0 1rem 0 1rem;
+  color: #24554A;
 }
 
 @media screen and (min-width: 767px) {
@@ -8514,11 +8556,15 @@ html, body {
   font-family: Verdana;
   font-size: 16px;
   padding: 0 1rem 0 1rem;
+  color: #205269;
 }
 
 .titlePhoto {
   position: relative;
+  text-align: center;
   top: 350px;
+  color: #205269;
+  font-family: "AskanBlack";
 }
 
 .photoPeople {
@@ -8532,6 +8578,32 @@ html, body {
   text-align: center;
 }
 
+.descPeople {
+  font-family: verdana;
+  font-size: 14px;
+  color: #5A626D;
+  padding: 1rem 1rem;
+}
+
+.titlePeople {
+  padding-top: 20px;
+  font-family: "AskanBlack";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #A6AAAC;
+}
+
+.namePeople {
+  font-family: "AskanBlack";
+  color: black;
+}
+
+.jobPeople {
+  color: #BCBFBE;
+  font-size: 10px;
+}
+
 .containerGallery {
   display: grid;
   grid-template-columns: minmax(2, 1fr);
@@ -8541,25 +8613,80 @@ html, body {
 }
 
 .milk {
-  aspect-ratio: 1/1;
+  height: 100%;
   width: 100%;
   grid-area: milk;
 }
 
 .lemon {
-  aspect-ratio: 1/1;
+  height: 100%;
   width: 100%;
   grid-area: lemon;
 }
 
 .ice {
-  aspect-ratio: 1/1;
+  height: 100%;
   width: 100%;
   grid-area: ice;
 }
 
 .sugar {
-  aspect-ratio: 1/1;
+  height: 100%;
   width: 100%;
   grid-area: sugar;
+}
+
+footer {
+  background-color: #90D5C6;
+  padding-bottom: 1rem;
+}
+
+.navFooter {
+  margin: 0;
+  padding: 0;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.titleFooter {
+  text-align: center;
+  font-family: "FilsonProBlack";
+  color: #2D7566;
+}
+
+.menuFooter {
+  display: inline flex;
+  justify-content: center;
+  padding: 1rem;
+  padding-top: 0rem;
+  text-decoration: none;
+  font-family: verdana;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  list-style: none;
+}
+
+.aboutFooter, .servicesFooter, .projectsFooter {
+  text-decoration: none;
+  padding: 1rem;
+  color: #2D7566;
+}
+
+.socialMedia {
+  display: inline flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-left: 25px;
+  justify-content: space-around, center;
+  align-content: center;
+}
+
+.facebook, .twitter, .pinterest, .instagram {
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -18,6 +18,9 @@
 }
     
 .creative{
+        padding-top: 250px;
+        padding-bottom: 250px;
+        margin: 0px;
         text-align: center;
         font-family: 'AskanBlack';
         font-size: 60px;
@@ -26,6 +29,7 @@
 
 .arrow_white{
         display: flex;
+        size-adjust: 50%;
         justify-content: center;
         align-content: center;
 }

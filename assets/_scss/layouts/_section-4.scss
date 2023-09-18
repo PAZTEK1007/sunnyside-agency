@@ -5,8 +5,12 @@
 }
 .DescPhoto{
     @include orangecherry;
+    color: #205269;
 }
 .titlePhoto{
     position: relative;
+    text-align: center;
     top: 350px;
+    color: #205269;
+    font-family: "AskanBlack";
 }

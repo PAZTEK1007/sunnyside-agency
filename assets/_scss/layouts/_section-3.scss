@@ -5,11 +5,16 @@
 
 }
 .titleCherry{
+    text-align: center;
     position: relative;
     top: 350px;
+    font-family: "AskanBlack";
+    color: #24554A
+
 }
 .descCherry{
       @include orangecherry;
+      color: #24554A
 }
 @media screen and (min-width: 767px){
     .cherry-section{
