@@ -8256,7 +8256,7 @@ readers do not read off random characters that represent icons */
 
 header {
   width: 100%;
-  background-image: url("../../images/photos/image-header.jpg");
+  background-image: url("assets/images/photos/image-header.jpg");
   background-color: #cccccc;
   background-position: center center;
   background-repeat: no-repeat;
