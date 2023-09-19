@@ -8232,11 +8232,11 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: "FilsonProBlack";
-  src: url(/assets/font/FilsonProBlack.otf) format("opentype");
+  src: url(../../font/FilsonProBlack.otf) format("opentype");
 }
 @font-face {
   font-family: "AskanBlack";
-  src: url(/assets/font/AskanBlack.otf) format("opentype");
+  src: url(../../font/AskanBlack.otf) format("opentype");
 }
 .button {
   text-align: center;
@@ -8256,7 +8256,7 @@ readers do not read off random characters that represent icons */
 
 header {
   width: 100%;
-  background-image: url("assets/images/photos/image-header.jpg");
+  background-image: url("./assets/images/photos/image-header.jpg");
   background-color: #cccccc;
   background-position: center center;
   background-repeat: no-repeat;
@@ -8293,8 +8293,7 @@ header {
   header {
     width: 100%;
     padding-top: 5rem;
-    background-image: url("../../images/photos/image-header.jpg");
-    background-color: #cccccc;
+    background-image: url("./assets/images/photos/image-header.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto, 538px;
@@ -8512,7 +8511,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../../images/photos/image-graphic-design.jpg");
+  background-image: url("./assets/images/photos/image-graphic-design.jpg");
   padding-top: 5px;
 }
 
@@ -8545,7 +8544,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../../images/photos/image-photography.jpg");
+  background-image: url("./assets/images/photos/image-photography.jpg");
   padding-top: 5px;
 }
 
